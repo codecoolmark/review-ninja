@@ -1,0 +1,29 @@
+{
+  "name": "review-ninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "type": "module",
+  "directories": {
+    "bin": "src"
+  },
+  "scripts": {
+    "cli": "node src/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecoolmark/review-ninja.git"
+  },
+  "author": "",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/codecoolmark/review-ninja/issues"
+  },
+  "homepage": "https://github.com/codecoolmark/review-ninja#readme",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "eslint": "^8.32.0",
+    "mustache": "^4.2.0"
+  }
+}
