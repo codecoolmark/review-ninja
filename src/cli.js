@@ -25,7 +25,7 @@ commandline
     .argument('<path to repository>', 'Path to the students repository')
     .action(repoPath => {
         checkProject({projectPath: repoPath})
-            .then(results => Object.entries(results).map(formatResult))
+            .then(results => Object.entries(results).sort(([, messagesA], [, messagesB]) => messagesB.length - messagesA.length).map(formatResult))
             .then(lines => lines.forEach(line => console.log(line)))
     });
 commandline.parse()
