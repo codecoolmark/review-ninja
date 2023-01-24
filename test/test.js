@@ -11,4 +11,9 @@ function initUi() {
     loadData.then(data => console.log(data));
 }
 
+function testB() {
+    return 5;
+    console.log("Hello");
+}
+
 initUi()

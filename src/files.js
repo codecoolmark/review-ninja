@@ -12,4 +12,4 @@ export const filterTree = (path, predicate) => {
                 return Promise.resolve([join(path, file.name)])
     }))
     .then(listOfLists => listOfLists.flatMap(list => list)))
-};
+}

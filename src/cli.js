@@ -1,6 +1,6 @@
 import { Command } from 'commander'
-import { checkProject } from './app.js';
-import mustache from 'mustache';
+import { checkProject } from './app.js'
+import mustache from 'mustache'
 
 const commandline = new Command()
 
@@ -27,5 +27,5 @@ commandline
         checkProject({projectPath: repoPath})
             .then(results => Object.entries(results).sort(([, messagesA], [, messagesB]) => messagesB.length - messagesA.length).map(formatResult))
             .then(lines => lines.forEach(line => console.log(line)))
-    });
+    })
 commandline.parse()
